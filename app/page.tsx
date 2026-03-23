@@ -1,10 +1,31 @@
-import { Hero } from "@/components/Hero"
-import { Button } from "@/components/ui/button"
+"use client"
+
+import { SiteHeader } from "@/components/shared/site-header"
+import { HeroSection } from "@/components/sections/hero-section"
+import { ProblemSection } from "@/components/sections/problem-section"
+import { SolutionSection } from "@/components/sections/solution-section"
+import { HowItWorksSection } from "@/components/sections/how-it-works-section"
+import { AdvantagesSection } from "@/components/sections/advantages-section"
+import { UseCasesSection } from "@/components/sections/use-cases-section"
+import { EconomicsSection } from "@/components/sections/economics-section"
+import { FinalCTASection } from "@/components/sections/final-cta-section"
+import { FooterSection } from "@/components/sections/footer-section"
 
 export default function Page() {
   return (
-    <main>
-      <Hero />
-    </main>
+    <>
+      <SiteHeader />
+      <main>
+        <HeroSection />
+        <ProblemSection />
+        <SolutionSection />
+        <HowItWorksSection />
+        <AdvantagesSection />
+        <UseCasesSection />
+        <EconomicsSection />
+        <FinalCTASection />
+      </main>
+      <FooterSection />
+    </>
   )
 }
