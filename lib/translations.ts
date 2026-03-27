@@ -43,29 +43,27 @@ export const translations = {
     solutionBadge: "The solution",
     solutionTitle: "Meet Radonix",
     solutionSubtitle:
-      "An autonomous robotic platform designed to replace manual microclimate measurements. Radonix moves through spaces independently, collecting comprehensive environmental data with zero blind zones.",
+      "Our robot runs on SLAM* technology — it orients itself in space and independently builds a map of the surrounding environment.",
     solutionFeatures: [
       {
-        title: "Mobile robotic platform",
-        description:
-          "Compact autonomous robot that navigates any indoor environment.",
+        title: "Temperature sensor",
+        description: "Measures air temperature.",
       },
       {
-        title: "SLAM navigation",
-        description:
-          "Real-time mapping and localization without pre-installed infrastructure.",
+        title: "Humidity sensor",
+        description: "Measures air humidity.",
       },
       {
-        title: "Multi-sensor array",
-        description:
-          "Temperature, humidity, pressure, and radiation — all in one device.",
+        title: "Pressure sensor",
+        description: "Measures atmospheric pressure.",
       },
       {
-        title: "Real-time data transmission",
-        description:
-          "Instant data streaming to your dashboard for immediate analysis.",
+        title: "Radiation sensor",
+        description: "Measures background radiation levels.",
       },
     ],
+    solutionSlam:
+      "*SLAM (Simultaneous Localization and Mapping) — a technology that allows the robot to simultaneously determine its position and build a map of the space without GPS. This ensures precise navigation and stable operation in any conditions.",
 
     // How it works
     howBadge: "How it works",
@@ -205,15 +203,16 @@ export const translations = {
     ],
     footerCopyright: "Radonix. All rights reserved.",
     footerContact: "Contact:",
+    footerNote: "School project",
   },
 
   ru: {
     // Hero
     heroBadge: "Автономный анализ микроклимата",
-    heroTitle: "Интеллектуальный мониторинг среды.",
-    heroTitleAccent: "Без слепых зон.",
+    heroTitle: "Знакомьтесь, Radonix!",
+    heroTitleAccent: "",
     heroSubtitle:
-      "Radonix — мобильная роботизированная платформа, которая автономно собирает данные о микроклимате: температуру, влажность, давление и уровень радиации — в режиме реального времени с полным покрытием площади.",
+      "Автономная роботизированная платформа, созданная для замены ручных измерений микроклимата. Radonix самостоятельно перемещается по помещениям, собирая полные данные о среде без слепых зон.",
     heroBenefits: [
       "Снижение затрат на измерения до 60%",
       "Без слепых зон — полное покрытие площади",
@@ -247,31 +246,29 @@ export const translations = {
 
     // Solution
     solutionBadge: "Решение",
-    solutionTitle: "Знакомьтесь — Radonix",
+    solutionTitle: "Техническое оснащение Radonix",
     solutionSubtitle:
-      "Автономная роботизированная платформа, созданная для замены ручных измерений микроклимата. Radonix самостоятельно перемещается по помещениям, собирая полные данные о среде без слепых зон.",
+      "Наш робот работает на технологии SLAM* — он ориентируется в пространстве и самостоятельно строит карту окружающей среды.",
     solutionFeatures: [
       {
-        title: "Мобильная роботизированная платформа",
-        description:
-          "Компактный автономный робот, способный перемещаться в любом помещении.",
+        title: "Датчик температуры",
+        description: "Измеряет температуру воздуха.",
       },
       {
-        title: "SLAM-навигация",
-        description:
-          "Картирование и локализация в реальном времени без предустановленной инфраструктуры.",
+        title: "Датчик влажности",
+        description: "Измеряет влажность воздуха.",
       },
       {
-        title: "Мульти-сенсорная система",
-        description:
-          "Температура, влажность, давление и радиация — всё в одном устройстве.",
+        title: "Датчик давления",
+        description: "Измеряет атмосферное давление.",
       },
       {
-        title: "Передача данных в реальном времени",
-        description:
-          "Мгновенная потоковая передача данных на панель управления для немедленного анализа.",
+        title: "Датчик радиации",
+        description: "Измеряет уровень радиационного фона.",
       },
     ],
+    solutionSlam:
+      "*SLAM (Simultaneous Localization and Mapping) — технология, которая позволяет роботу одновременно определять своё положение и формировать карту пространства без использования GPS. Это обеспечивает точную навигацию и стабильную работу в любых условиях.",
 
     // How it works
     howBadge: "Как это работает",
@@ -412,6 +409,7 @@ export const translations = {
     ],
     footerCopyright: "Radonix. Все права защищены.",
     footerContact: "Контакты:",
+    footerNote: "Проект разработан для «Всероссийской олимпиады школьников по предпринимательству»",
   },
 }
 

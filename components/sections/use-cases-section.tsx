@@ -11,11 +11,11 @@ export function UseCasesSection() {
   const { t } = useLanguage()
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-12 md:py-20 lg:py-28">
       <div className="mx-auto max-w-6xl px-4 md:px-8 lg:px-12">
         <div className="mx-auto max-w-2xl text-center">
           <Badge variant="secondary">{t.useCasesBadge}</Badge>
-          <h2 className="mt-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+          <h2 className="mt-4 text-2xl font-bold tracking-tight text-foreground sm:text-3xl md:text-4xl">
             {t.useCasesTitle}
           </h2>
           <p className="mt-4 text-muted-foreground">
@@ -29,16 +29,16 @@ export function UseCasesSection() {
             return (
               <Card
                 key={useCase.title}
-                className="border-border/50 bg-card text-center transition-colors hover:border-primary/20"
+                className="border-none bg-card text-center"
               >
                 <CardContent className="flex flex-col items-center pt-2">
                   <div className="mb-4 flex size-12 items-center justify-center rounded-xl bg-primary/10">
                     <Icon className="size-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground">
+                  <h3 className="font-semibold text-card-foreground">
                     {useCase.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-2 text-sm leading-relaxed text-card-foreground/60">
                     {useCase.description}
                   </p>
                 </CardContent>

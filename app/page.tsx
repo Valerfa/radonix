@@ -8,7 +8,6 @@ import { HowItWorksSection } from "@/components/sections/how-it-works-section"
 import { AdvantagesSection } from "@/components/sections/advantages-section"
 import { UseCasesSection } from "@/components/sections/use-cases-section"
 import { EconomicsSection } from "@/components/sections/economics-section"
-import { FinalCTASection } from "@/components/sections/final-cta-section"
 import { FooterSection } from "@/components/sections/footer-section"
 
 export default function Page() {
@@ -17,13 +16,9 @@ export default function Page() {
       <SiteHeader />
       <main>
         <HeroSection />
-        <ProblemSection />
         <SolutionSection />
         <HowItWorksSection />
-        <AdvantagesSection />
         <UseCasesSection />
-        <EconomicsSection />
-        <FinalCTASection />
       </main>
       <FooterSection />
     </>

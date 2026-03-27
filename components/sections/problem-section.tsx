@@ -28,7 +28,7 @@ export function ProblemSection() {
           {t.problems.map((problem, index) => {
             const Icon = icons[index]
             return (
-              <Card key={problem.title} className="border-none bg-muted/50">
+              <Card key={problem.title} className="border-none bg-card">
                 <CardHeader>
                   <div className="mb-2 flex size-10 items-center justify-center rounded-lg bg-primary/10">
                     <Icon className="size-5 text-primary" />
@@ -36,7 +36,7 @@ export function ProblemSection() {
                   <CardTitle className="text-lg">{problem.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm leading-relaxed text-muted-foreground">
+                  <p className="text-sm leading-relaxed text-card-foreground/60">
                     {problem.description}
                   </p>
                 </CardContent>

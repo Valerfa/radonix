@@ -8,7 +8,7 @@ export function EconomicsSection() {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-muted/30 py-20 md:py-28">
+    <section className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 md:px-8 lg:px-12">
         <div className="mx-auto max-w-2xl text-center">
           <Badge variant="secondary">{t.economicsBadge}</Badge>
@@ -34,17 +34,17 @@ export function EconomicsSection() {
           {t.comparisons.map((item) => (
             <div
               key={item.label}
-              className="grid items-center gap-4 rounded-xl border border-border/50 bg-card p-5 md:grid-cols-[1fr_auto_1fr]"
+              className="grid items-center gap-4 rounded-xl bg-card p-5 md:grid-cols-[1fr_auto_1fr]"
             >
               <div>
-                <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-muted-foreground md:hidden">
+                <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-card-foreground/60 md:hidden">
                   {t.economicsBefore}
                 </span>
-                <p className="text-sm text-muted-foreground">{item.before}</p>
+                <p className="text-sm text-card-foreground/60">{item.before}</p>
               </div>
 
               <div className="flex flex-col items-center gap-1">
-                <span className="text-xs font-medium text-foreground">
+                <span className="text-xs font-medium text-card-foreground">
                   {item.label}
                 </span>
                 <ArrowRight className="size-4 text-primary" />
@@ -54,7 +54,7 @@ export function EconomicsSection() {
                 <span className="mb-1 block text-xs font-medium uppercase tracking-wider text-primary md:hidden">
                   {t.economicsAfter}
                 </span>
-                <p className="text-sm font-medium text-foreground">
+                <p className="text-sm font-medium text-card-foreground">
                   {item.after}
                 </p>
               </div>

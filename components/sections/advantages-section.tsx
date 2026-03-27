@@ -18,7 +18,7 @@ export function AdvantagesSection() {
   const { t } = useLanguage()
 
   return (
-    <section className="bg-muted/30 py-20 md:py-28">
+    <section className="py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-4 md:px-8 lg:px-12">
         <div className="mx-auto max-w-2xl text-center">
           <Badge variant="secondary">{t.advantagesBadge}</Badge>
@@ -36,16 +36,16 @@ export function AdvantagesSection() {
             return (
               <Card
                 key={advantage.title}
-                className="border-border/50 bg-card transition-colors hover:border-primary/20"
+                className="border-none bg-card"
               >
                 <CardContent className="pt-1">
                   <div className="mb-3 flex size-10 items-center justify-center rounded-lg bg-primary/10">
                     <Icon className="size-5 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground">
+                  <h3 className="font-semibold text-card-foreground">
                     {advantage.title}
                   </h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
+                  <p className="mt-1.5 text-sm leading-relaxed text-card-foreground/60">
                     {advantage.description}
                   </p>
                 </CardContent>
